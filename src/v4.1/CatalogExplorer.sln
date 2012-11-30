@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogExplorer", "CatalogExplorer.csproj", "{26589CA4-D778-4B82-827F-CFED8477464D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{26589CA4-D778-4B82-827F-CFED8477464D}.Debug.ActiveCfg = Debug|.NET
+		{26589CA4-D778-4B82-827F-CFED8477464D}.Debug.Build.0 = Debug|.NET
+		{26589CA4-D778-4B82-827F-CFED8477464D}.Release.ActiveCfg = Release|.NET
+		{26589CA4-D778-4B82-827F-CFED8477464D}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

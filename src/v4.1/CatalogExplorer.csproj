@@ -1,0 +1,216 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{26589CA4-D778-4B82-827F-CFED8477464D}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "SAS.Task.CatalogExplorer41"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "CatalogExplorer"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\..\Windows\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\Windows\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "..\..\..\Windows\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "..\..\..\Windows\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\Windows\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "SAS.Shared.AddIns"
+                    AssemblyName = "SAS.Shared.AddIns"
+                    HintPath = "..\..\..\Program Files\SAS\Shared Files\BIClientTasks\4\SAS.Shared.AddIns.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "SAS.AxInterop.EDITORCONTROLLib"
+                    AssemblyName = "SAS.AxInterop.EDITORCONTROLLib"
+                    HintPath = "..\..\..\Program Files\SAS\Enterprise Guide 4\SAS.AxInterop.EDITORCONTROLLib.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "SAS.Interop.EDITORCONTROLLib"
+                    AssemblyName = "SAS.Interop.EDITORCONTROLLib"
+                    HintPath = "..\..\..\Program Files\SAS\Enterprise Guide 4\SAS.Interop.EDITORCONTROLLib.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "SAS.Interop.SAS"
+                    AssemblyName = "SAS.Interop.SAS"
+                    HintPath = "..\..\..\Program Files\SAS\Enterprise Guide 4\SAS.Interop.SAS.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "adodb"
+                    AssemblyName = "ADODB"
+                    HintPath = "..\..\..\Program Files\SAS\Enterprise Guide 4\adodb.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CatalogExplorer.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CatalogExplorerForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "CatalogExplorerForm.resx"
+                    DependentUpon = "CatalogExplorerForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "EEFileViewer.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "EEFileViewer.resx"
+                    DependentUpon = "EEFileViewer.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Global.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "icons\catalog.ico"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "icons\class.ico"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "icons\delete.ico"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "icons\entry.ico"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "icons\frame.ico"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "icons\library.ico"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "icons\menu.ico"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "icons\open.ico"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "icons\sascode.ico"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "icons\scl.ico"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "icons\server.ico"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "icons\slist.ico"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "icons\wsave.ico"
+                    BuildAction = "EmbeddedResource"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

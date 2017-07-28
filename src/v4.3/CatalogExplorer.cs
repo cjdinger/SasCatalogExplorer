@@ -10,14 +10,14 @@ using SAS.Shared.AddIns;
 using SAS.Tasks.Toolkit;
 // for access to the Add-in interfaces
 
-namespace CatalogExplorer
+namespace SAS.Tasks.CatalogFormats
 {
 	/// <summary>
 	/// Present a UI for viewing SAS catalog entries
 	/// </summary>
     [ClassId("6E2E0060-D11A-499C-BC68-20ECD7AA06EA")]
     [InputRequired(InputResourceType.None)]
-    [IconLocation("CatalogExplorer.icons.catalog.ico")]
+    [IconLocation("SAS.Tasks.CatalogFormats.icons.catalog.ico")]
 	public class CatalogExplorer : SAS.Tasks.Toolkit.SasTask
 	{
 		public CatalogExplorer()

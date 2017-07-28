@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CatalogExplorer
+namespace SAS.Tasks.CatalogFormats
 {
     /// <summary>
     /// For sorting the items in the Members list.  

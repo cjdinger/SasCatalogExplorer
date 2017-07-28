@@ -16,7 +16,7 @@
     <DefaultTargetSchema>IE50</DefaultTargetSchema>
     <DelaySign>false</DelaySign>
     <OutputType>Library</OutputType>
-    <RootNamespace>CatalogExplorer</RootNamespace>
+    <RootNamespace>SAS.Tasks.CatalogFormats</RootNamespace>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
     <StartupObject />
     <FileUpgradeFlags>
@@ -136,6 +136,11 @@
       <DependentUpon>ListingViewForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MemberComparer.cs" />
+    <Compile Include="Translate.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Translate.resx</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CatalogExplorer.resx">
       <DependentUpon>CatalogExplorer.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +162,10 @@
     <EmbeddedResource Include="icons\wsave.ico" />
     <EmbeddedResource Include="ListingViewForm.resx">
       <DependentUpon>ListingViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Translate.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Translate.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

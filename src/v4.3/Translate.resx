@@ -117,118 +117,47 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnClose.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
+  <data name="LabelFormatDefinition" xml:space="preserve">
+    <value>Format definition: {0} in {1}.{2}</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
-    <value>527, 276</value>
+  <data name="LabelUserDefinedFormats" xml:space="preserve">
+    <value>User-defined formats</value>
   </data>
-  <data name="btnClose.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="MessageCatalog" xml:space="preserve">
+    <value>Catalog {1}.{2} contains {0} entries</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnClose.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="MessageCatalogDeleted" xml:space="preserve">
+    <value>{0} was deleted.</value>
   </data>
-  <data name="btnClose.Text" xml:space="preserve">
-    <value>Close</value>
+  <data name="MessageCatalogNotDeleted" xml:space="preserve">
+    <value>Error: {0} WAS NOT deleted.</value>
   </data>
-  <data name="&gt;&gt;btnClose.Name" xml:space="preserve">
-    <value>btnClose</value>
+  <data name="MessageCatalogReadError" xml:space="preserve">
+    <value>Error reading catalog entry: {0} - {1}</value>
+    <comment> </comment>
   </data>
-  <data name="&gt;&gt;btnClose.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="MessageDeleteConfirm" xml:space="preserve">
+    <value>Are you sure that you want to delete {0}?</value>
   </data>
-  <data name="&gt;&gt;btnClose.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="MessageErrorFormat" xml:space="preserve">
+    <value>Error: Could not generate format definition</value>
   </data>
-  <data name="&gt;&gt;btnClose.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="MessageFmtSearch" xml:space="preserve">
+    <value>Search locations: {0}</value>
   </data>
-  <data name="btnCopy.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
+  <data name="MessageLibrary" xml:space="preserve">
+    <value>Library contains {0} catalogs</value>
   </data>
-  <data name="btnCopy.Location" type="System.Drawing.Point, System.Drawing">
-    <value>406, 276</value>
+  <data name="MessageServer" xml:space="preserve">
+    <value>Server has {0} libraries defined</value>
   </data>
-  <data name="btnCopy.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 23</value>
+  <data name="MessageServerBusy" xml:space="preserve">
+    <value>The SAS server '{0}' is busy. Cannot generate the format definition.</value>
   </data>
-  <data name="btnCopy.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="TitleDeleteConfirm" xml:space="preserve">
+    <value>Confirm: Delete entry?</value>
   </data>
-  <data name="btnCopy.Text" xml:space="preserve">
-    <value>Copy to clipboard</value>
-  </data>
-  <data name="&gt;&gt;btnCopy.Name" xml:space="preserve">
-    <value>btnCopy</value>
-  </data>
-  <data name="&gt;&gt;btnCopy.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCopy.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnCopy.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="txtFormatOut.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="txtFormatOut.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Consolas, 9pt</value>
-  </data>
-  <data name="txtFormatOut.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 12</value>
-  </data>
-  <data name="txtFormatOut.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="txtFormatOut.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
-    <value>Vertical</value>
-  </data>
-  <data name="txtFormatOut.Size" type="System.Drawing.Size, System.Drawing">
-    <value>589, 258</value>
-  </data>
-  <data name="txtFormatOut.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;txtFormatOut.Name" xml:space="preserve">
-    <value>txtFormatOut</value>
-  </data>
-  <data name="&gt;&gt;txtFormatOut.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtFormatOut.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txtFormatOut.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>614, 311</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>475, 350</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Format definition</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>ListingViewForm</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="TitleError" xml:space="preserve">
+    <value>Error</value>
   </data>
 </root>

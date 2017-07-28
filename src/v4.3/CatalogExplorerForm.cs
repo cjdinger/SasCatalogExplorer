@@ -15,7 +15,7 @@ using SAS.Tasks.Toolkit;
 using SAS.Tasks.Toolkit.Data;
 
 
-namespace CatalogExplorer
+namespace SAS.Tasks.CatalogFormats
 {
 	/// <summary>
 	/// Present a UI for viewing SAS catalog entries
@@ -292,11 +292,13 @@ namespace CatalogExplorer
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CatalogExplorerForm));
             this.tbTools = new System.Windows.Forms.ToolBar();
             this.btnServers = new System.Windows.Forms.ToolBarButton();
             this.mnuServers = new System.Windows.Forms.ContextMenu();
             this.btnView = new System.Windows.Forms.ToolBarButton();
             this.btnDelete = new System.Windows.Forms.ToolBarButton();
+            this.btnRefresh = new System.Windows.Forms.ToolBarButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lvMembers = new System.Windows.Forms.ListView();
             this.objName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -307,24 +309,18 @@ namespace CatalogExplorer
             this.ctlSplitter = new System.Windows.Forms.Splitter();
             this.tvLibsCats = new System.Windows.Forms.TreeView();
             this.statusBar = new System.Windows.Forms.StatusBar();
-            this.btnRefresh = new System.Windows.Forms.ToolBarButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbTools
             // 
-            this.tbTools.Appearance = System.Windows.Forms.ToolBarAppearance.Flat;
+            resources.ApplyResources(this.tbTools, "tbTools");
             this.tbTools.Buttons.AddRange(new System.Windows.Forms.ToolBarButton[] {
             this.btnServers,
             this.btnView,
             this.btnDelete,
             this.btnRefresh});
-            this.tbTools.DropDownArrows = true;
-            this.tbTools.Location = new System.Drawing.Point(0, 0);
             this.tbTools.Name = "tbTools";
-            this.tbTools.ShowToolTips = true;
-            this.tbTools.Size = new System.Drawing.Size(740, 50);
-            this.tbTools.TabIndex = 0;
             this.tbTools.TabStop = true;
             // 
             // btnServers
@@ -332,20 +328,22 @@ namespace CatalogExplorer
             this.btnServers.DropDownMenu = this.mnuServers;
             this.btnServers.Name = "btnServers";
             this.btnServers.Style = System.Windows.Forms.ToolBarButtonStyle.DropDownButton;
-            this.btnServers.Text = "Servers";
-            this.btnServers.ToolTipText = "Select active server";
+            resources.ApplyResources(this.btnServers, "btnServers");
             // 
             // btnView
             // 
             this.btnView.Name = "btnView";
-            this.btnView.Text = "View";
-            this.btnView.ToolTipText = "View contents of entry";
+            resources.ApplyResources(this.btnView, "btnView");
             // 
             // btnDelete
             // 
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.ToolTipText = "Delete the selected entry";
+            resources.ApplyResources(this.btnDelete, "btnDelete");
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Name = "btnRefresh";
+            resources.ApplyResources(this.btnRefresh, "btnRefresh");
             // 
             // panel1
             // 
@@ -353,11 +351,8 @@ namespace CatalogExplorer
             this.panel1.Controls.Add(this.ctlSplitter);
             this.panel1.Controls.Add(this.tvLibsCats);
             this.panel1.Controls.Add(this.statusBar);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 50);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(740, 362);
-            this.panel1.TabIndex = 1;
             // 
             // lvMembers
             // 
@@ -367,81 +362,58 @@ namespace CatalogExplorer
             this.objDesc,
             this.objCreated,
             this.objModified});
-            this.lvMembers.Dock = System.Windows.Forms.DockStyle.Fill;
+            resources.ApplyResources(this.lvMembers, "lvMembers");
             this.lvMembers.FullRowSelect = true;
-            this.lvMembers.Location = new System.Drawing.Point(170, 0);
             this.lvMembers.MultiSelect = false;
             this.lvMembers.Name = "lvMembers";
-            this.lvMembers.Size = new System.Drawing.Size(570, 340);
-            this.lvMembers.TabIndex = 2;
             this.lvMembers.UseCompatibleStateImageBehavior = false;
             this.lvMembers.View = System.Windows.Forms.View.Details;
+            this.lvMembers.ItemActivate += new System.EventHandler(this.OnItemDoubleClicked);
             this.lvMembers.DoubleClick += new System.EventHandler(this.OnItemDoubleClicked);
             // 
             // objName
             // 
-            this.objName.Text = "Name";
-            this.objName.Width = 100;
+            resources.ApplyResources(this.objName, "objName");
             // 
             // objType
             // 
-            this.objType.Text = "Type";
-            this.objType.Width = 100;
+            resources.ApplyResources(this.objType, "objType");
             // 
             // objDesc
             // 
-            this.objDesc.Text = "Description";
-            this.objDesc.Width = 150;
+            resources.ApplyResources(this.objDesc, "objDesc");
             // 
             // objCreated
             // 
-            this.objCreated.Text = "Created";
-            this.objCreated.Width = 100;
+            resources.ApplyResources(this.objCreated, "objCreated");
             // 
             // objModified
             // 
-            this.objModified.Text = "Modified";
-            this.objModified.Width = 100;
+            resources.ApplyResources(this.objModified, "objModified");
             // 
             // ctlSplitter
             // 
-            this.ctlSplitter.Location = new System.Drawing.Point(167, 0);
+            resources.ApplyResources(this.ctlSplitter, "ctlSplitter");
             this.ctlSplitter.Name = "ctlSplitter";
-            this.ctlSplitter.Size = new System.Drawing.Size(3, 340);
-            this.ctlSplitter.TabIndex = 1;
             this.ctlSplitter.TabStop = false;
             // 
             // tvLibsCats
             // 
-            this.tvLibsCats.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tvLibsCats.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.tvLibsCats, "tvLibsCats");
             this.tvLibsCats.Name = "tvLibsCats";
-            this.tvLibsCats.Size = new System.Drawing.Size(167, 340);
-            this.tvLibsCats.TabIndex = 0;
             this.tvLibsCats.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.OnTreeNodeSelected);
             // 
             // statusBar
             // 
-            this.statusBar.Location = new System.Drawing.Point(0, 340);
+            resources.ApplyResources(this.statusBar, "statusBar");
             this.statusBar.Name = "statusBar";
-            this.statusBar.Size = new System.Drawing.Size(740, 22);
-            this.statusBar.TabIndex = 3;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.ToolTipText = "Refresh catalog content from server";
             // 
             // CatalogExplorerForm
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-            this.ClientSize = new System.Drawing.Size(740, 412);
+            resources.ApplyResources(this, "$this");
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tbTools);
             this.Name = "CatalogExplorerForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SAS Catalog Explorer";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -484,7 +456,7 @@ namespace CatalogExplorer
                     }
                 }
 
-                TreeNode tnf = new TreeNode("User-defined formats");
+                TreeNode tnf = new TreeNode(Translate.LabelUserDefinedFormats);
                 tnf.ImageIndex = (int)CatImages.Folder;
                 tnf.SelectedImageIndex = (int)CatImages.Folder;
                 tnf.Tag = "FMTSEARCH";
@@ -666,20 +638,20 @@ namespace CatalogExplorer
 				case "SERVER":
 				{
 					lvMembers.Items.Clear();
-					statusBar.Text = string.Format("Server has {0} libraries defined", e.Node.Nodes.Count);
+					statusBar.Text = string.Format(Translate.MessageServer, e.Node.Nodes.Count);
 					break;
 				}
 				case "LIBRARY":
 				{
 					lvMembers.Items.Clear();
-					statusBar.Text = string.Format("Library contains {0} catalogs", e.Node.Nodes!=null ? e.Node.Nodes.Count : 0);
+					statusBar.Text = string.Format(Translate.MessageLibrary, e.Node.Nodes!=null ? e.Node.Nodes.Count : 0);
 					break;
 				}
 				case "CATALOG":
 				{
 					if (e.Node.Parent!=null)
 						PopulateMembers(e.Node.Parent.Text, e.Node.Text);
-                    statusBar.Text = string.Format("Catalog {1}.{2} contains {0} entries", lvMembers.Items.Count, e.Node.Parent.Text, e.Node.Text);
+                    statusBar.Text = string.Format(Translate.MessageCatalog, lvMembers.Items.Count, e.Node.Parent.Text, e.Node.Text);
 					break;
 				}
                 case "LIBCAT":
@@ -687,13 +659,13 @@ namespace CatalogExplorer
                     string[] parts = e.Node.Text.Split('.');
                     if (parts.Length==2)
                         PopulateMembers(parts[0], parts[1]);
-                    statusBar.Text = string.Format("Catalog {1}.{2} contains {0} entries", lvMembers.Items.Count, parts[0], parts[1]);
+                    statusBar.Text = string.Format(Translate.MessageCatalog, lvMembers.Items.Count, parts[0], parts[1]);
                     break;
                 }
                 case "FMTSEARCH":
                 {
                     lvMembers.Items.Clear();
-                    statusBar.Text = "Search locations: " + FmtSearch;
+                    statusBar.Text = string.Format(Translate.MessageFmtSearch, FmtSearch);
                     break;
                 }
 				default:
@@ -769,13 +741,14 @@ namespace CatalogExplorer
             "%let _catexp1 = %sysfunc(getoption(center)); " +
             "%let _catexp2 = %sysfunc(getoption(date)); " +
             "%let _catexp3 = %sysfunc(getoption(number)); " +
-            "options nocenter nodate nonumber; " +
+            "%let _catexp4 = %sysfunc(getoption(pagesize)); " +
+            "options nocenter nodate nonumber pagesize=max; " +
             "ods listing file=fmtout;" +
             "proc format fmtlib lib={0}.{1};" +
             " select {3}{2};" +
             "run;" +
             "ods listing close;" +
-            "options &_catexp1. &_catexp2. &_catexp3.;" + 
+            "options &_catexp1. &_catexp2. &_catexp3. PS=&_catexp4.;" + 
             ";*';*\";*/;quit;run;";
 
         private void ViewFormatDetails(string p)
@@ -783,7 +756,7 @@ namespace CatalogExplorer
             SasSubmitter s = new SasSubmitter(currentServer);
             if (s.IsServerBusy())
             {
-                MessageBox.Show(string.Format("The SAS server '{0}' is busy. Cannot generate the format definition.", currentServer), "Error");
+                MessageBox.Show(string.Format(Translate.MessageServerBusy, currentServer), Translate.TitleError);
                 return;
             }
 
@@ -820,12 +793,12 @@ namespace CatalogExplorer
                     string formatReport = GetTextFromFileref("fmtout");
 
                     ListingViewForm dlg = new ListingViewForm();
-                    dlg.Text = string.Format("Format definition: {0} in {1}.{2}", parts[2], parts[0], parts[1]);
+                    dlg.Text = string.Format(Translate.LabelFormatDefinition, parts[2], parts[0], parts[1]);
                     dlg.Content = formatReport;
                     dlg.ShowDialog(this);
                     s = null;
                 }
-                else MessageBox.Show("Error: Could not generate format definition","Error");
+                else MessageBox.Show(Translate.MessageErrorFormat,Translate.TitleError);
             }
         }
 		
@@ -850,14 +823,14 @@ namespace CatalogExplorer
             SasSubmitter s = new SasSubmitter(currentServer);
             if (s.IsServerBusy())
             {
-                MessageBox.Show(string.Format("The SAS server '{0}' is busy. Cannot delete the catalog entry.", currentServer), "Error");
+                MessageBox.Show(string.Format(Translate.MessageServerBusy, currentServer), Translate.TitleError);
                 return;
             }
 
 			if (catEntry.Length>0)
 			{
-				if (DialogResult.Yes==MessageBox.Show(string.Format("Are you sure that you want to delete {0}?",catEntry), 
-					"Confirm: Delete entry?", 
+				if (DialogResult.Yes==MessageBox.Show(string.Format(Translate.MessageDeleteConfirm,catEntry), 
+					Translate.TitleDeleteConfirm, 
 					MessageBoxButtons.YesNo))
 				{
 					Cursor c = Cursor.Current;
@@ -874,10 +847,10 @@ namespace CatalogExplorer
                         {
                             // refresh view
                             PopulateMembers(parts[0], parts[1]);
-                            statusBar.Text = string.Format("{0} was deleted.", catEntry);
+                            statusBar.Text = string.Format(Translate.MessageCatalogDeleted, catEntry);
                         }
                         else 
-                            MessageBox.Show(string.Format("Error: {0} WAS NOT deleted.", catEntry), "Error");
+                            MessageBox.Show(string.Format(Translate.MessageCatalogNotDeleted, catEntry), Translate.TitleError);
 					}
 					Cursor.Current = c;
 				}
@@ -975,7 +948,7 @@ namespace CatalogExplorer
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error reading catalog entry: " + catEntry + "  " + ex.Message, "Error");
+                MessageBox.Show(string.Format(Translate.MessageCatalogReadError, catEntry, ex.Message), Translate.TitleError);
             }
             finally
             {

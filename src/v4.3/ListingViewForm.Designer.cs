@@ -1,4 +1,4 @@
-﻿namespace CatalogExplorer
+﻿namespace SAS.Tasks.CatalogFormats
 {
     partial class ListingViewForm
     {
@@ -51,6 +51,7 @@
             // txtFormatOut
             // 
             resources.ApplyResources(this.txtFormatOut, "txtFormatOut");
+            this.txtFormatOut.BackColor = System.Drawing.SystemColors.Window;
             this.txtFormatOut.Name = "txtFormatOut";
             this.txtFormatOut.ReadOnly = true;
             // 

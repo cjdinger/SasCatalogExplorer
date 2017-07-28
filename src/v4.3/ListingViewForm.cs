@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CatalogExplorer
+namespace SAS.Tasks.CatalogFormats
 {
     public partial class ListingViewForm : Form
     {

@@ -97,11 +97,13 @@
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
       <HintPath>libs\SASInterop.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="SASIOMCommonInterop, Version=1.2.0.0, Culture=neutral, PublicKeyToken=be58efc3b934219b, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
       <HintPath>libs\SASIOMCommonInterop.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
